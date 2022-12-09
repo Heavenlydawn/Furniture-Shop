@@ -1,28 +1,15 @@
-import "./App.css";
-import Products from "./Products";
-import { Routes, Route } from "react-router-dom";
-import AllProducts from "./AllProducts";
-
+import './App.css';
+import Products from './Products';
+import AllProducts from './AllProducts';
+import Footer from "./components/footer/Footer"
 
 function App() {
   return (
-    <>
-    
-      <Routes>
-        <Route path="/" element={<Products />} />
-      </Routes>
-
-      <Routes>
-        <Route path="AllProducts" element={<AllProducts />} />
-      </Routes>
-
-     
-    </>
-
-    // <div>
-    //   <Products />
-    //   <AllProducts />
-    // </div>
+    <div>
+      <Products />
+      <AllProducts />
+      <Footer />
+    </div>
   );
 }
 
